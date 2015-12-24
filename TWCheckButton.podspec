@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author = { 'taewan' => 'taewan0530@daum.net' }
   s.source = { :git => 'https://github.com/taewan0530/TWCheckButton.git', :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
   s.source_files = 'TWCheckButton.swift'
