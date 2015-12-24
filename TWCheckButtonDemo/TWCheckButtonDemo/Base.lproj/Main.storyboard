@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TWCheckButtonDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mum-WT-cdx" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="25" y="78" width="57" height="30"/>
+                                <state key="normal" title="radio - 1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="first"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickRadio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bE1-fX-kWG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBE-3e-w6m" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="24" y="121" width="59" height="30"/>
+                                <state key="normal" title="radio - 2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="second"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickRadio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n25-Kq-T8n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppd-HM-ka1" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="24" y="168" width="59" height="30"/>
+                                <state key="normal" title="radio - 3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="third"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickRadio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOh-9n-esg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtl-rs-0a2">
+                                <rect key="frame" x="19" y="390" width="217" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZE-UO-mHs" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="23" y="246" width="59" height="30"/>
+                                <state key="normal" title="check -1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="first"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickCheck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZb-t2-PjM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzZ-lH-i9f" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="22" y="289" width="61" height="30"/>
+                                <state key="normal" title="check -2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="second"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickCheck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fym-kV-5bs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZu-ch-2qf" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="22" y="336" width="62" height="30"/>
+                                <state key="normal" title="check -3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="third"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickCheck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="893-LP-XVz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibU-hr-UJz">
+                                <rect key="frame" x="25" y="215" width="203" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="checkResultLabel" destination="rtl-rs-0a2" id="0WL-2b-Bce"/>
+                        <outlet property="radioResultLabel" destination="ibU-hr-UJz" id="HrD-18-MxB"/>
+                        <outletCollection property="radioGroup" destination="mum-WT-cdx" collectionClass="NSMutableArray" id="Stw-oO-VdM"/>
+                        <outletCollection property="radioGroup" destination="SBE-3e-w6m" collectionClass="NSMutableArray" id="MYV-d6-hKl"/>
+                        <outletCollection property="radioGroup" destination="Ppd-HM-ka1" collectionClass="NSMutableArray" id="i81-uV-eq0"/>
+                        <outletCollection property="checkGroup" destination="iZE-UO-mHs" collectionClass="NSMutableArray" id="j6v-NX-7oi"/>
+                        <outletCollection property="checkGroup" destination="NzZ-lH-i9f" collectionClass="NSMutableArray" id="yGY-iO-rkJ"/>
+                        <outletCollection property="checkGroup" destination="mZu-ch-2qf" collectionClass="NSMutableArray" id="tTB-ky-ux4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339.5" y="417.5"/>
+        </scene>
+    </scenes>
+</document>
