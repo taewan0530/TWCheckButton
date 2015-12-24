@@ -6,14 +6,13 @@
 //  Copyright © 2015년 prnd. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 private struct AssociatedKeys {
     static var isRadio = "isRadio"
 }
 
-class TWCheckButton: UIButton {
+public class TWCheckButton: UIButton {
     @IBInspectable var name: String?
     
     var _tw_group: [TWCheckButton]?
