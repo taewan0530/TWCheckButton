@@ -16,7 +16,7 @@ public class TWCheckButton: UIButton {
     @IBInspectable var name: String?
     
     var _tw_group: [TWCheckButton]?
-    var checked: Bool {
+    public var checked: Bool {
         get {
             return self.selected
         }
