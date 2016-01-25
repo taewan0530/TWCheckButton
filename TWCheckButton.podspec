@@ -1,9 +1,9 @@
-@version = "0.0.4"
+@version = "0.0.5"
 Pod::Spec.new do |s|
   s.name         = 'TWCheckButton'
   s.version      = @version
   s.summary      = 'check or radio group'
-  s.homepage     = 'https://github.com/taewan0530'
+  s.homepage     = 'https://github.com/taewan0530/TWCheckButton'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'taewan' => 'taewan0530@daum.net' }
   s.source       = { :git => "https://github.com/taewan0530/TWCheckButton.git", :tag => @version }
