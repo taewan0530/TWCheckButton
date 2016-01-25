@@ -10,12 +10,31 @@ import UIKit
 
 private struct AssociatedKeys {
     static var isRadio = "isRadio"
+    static var name = "tw_button_name"
+    static var group = "tw_group"
 }
 
-public class TWCheckButton: UIButton {
-    @IBInspectable var name: String?
+extension UIButton {
+    @IBInspectable var name: String {
+        get {
+            guard let name = objc_getAssociatedObject(self, &AssociatedKeys.name) as? String else { return "" }
+            return name
+        }
+        set(value) {
+            objc_setAssociatedObject(self, &AssociatedKeys.name, value, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
     
-    var _tw_group: [TWCheckButton]?
+    var _tw_group: [UIButton]? {
+        get {
+            guard let group = objc_getAssociatedObject(self, &AssociatedKeys.group) as? [UIButton] else { return nil }
+            return group
+        }
+        set(value) {
+            objc_setAssociatedObject(self, &AssociatedKeys.group, value, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
     public var checked: Bool {
         get {
             return self.selected
@@ -35,7 +54,7 @@ public class TWCheckButton: UIButton {
     }
 }
 
-extension Array where Element:TWCheckButton  {
+extension Array where Element:UIButton  {
     
     public var tw_group_isRadio: Bool {
         get {
@@ -51,9 +70,9 @@ extension Array where Element:TWCheckButton  {
         }
     }
     
-    public func tw_group_checked() -> [TWCheckButton] {
-        var results = [TWCheckButton]()
-        for button: TWCheckButton in self {
+    public func tw_group_checked() -> [UIButton] {
+        var results = [UIButton]()
+        for button: UIButton in self {
             if button.checked { results.append(button) }
         }
         return results

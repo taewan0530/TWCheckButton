@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var radioGroup: [TWCheckButton]?
-    @IBOutlet var checkGroup: [TWCheckButton]?
+    @IBOutlet var radioGroup: [UIButton]?
+    @IBOutlet var checkGroup: [UIButton]?
     
     @IBOutlet weak var radioResultLabel: UILabel!
     @IBOutlet weak var checkResultLabel: UILabel!
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func onClickRadio(sender: TWCheckButton) {
+    @IBAction func onClickRadio(sender: UIButton) {
         sender.checked = !sender.checked
         guard let radioGroup = self.radioGroup else { return }
         if let checkButton = radioGroup.tw_group_checked().first {
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func onClickCheck(sender: TWCheckButton) {
+    @IBAction func onClickCheck(sender: UIButton) {
         sender.checked = !sender.checked
         guard let checkGroup = self.checkGroup else { return }
         var names = ""

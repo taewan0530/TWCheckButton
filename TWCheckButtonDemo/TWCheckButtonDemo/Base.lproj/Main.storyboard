@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mum-WT-cdx" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mum-WT-cdx">
                                 <rect key="frame" x="25" y="78" width="57" height="30"/>
                                 <state key="normal" title="radio - 1"/>
                                 <userDefinedRuntimeAttributes>
@@ -27,7 +27,7 @@
                                     <action selector="onClickRadio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bE1-fX-kWG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBE-3e-w6m" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBE-3e-w6m">
                                 <rect key="frame" x="24" y="121" width="59" height="30"/>
                                 <state key="normal" title="radio - 2"/>
                                 <userDefinedRuntimeAttributes>
@@ -37,23 +37,13 @@
                                     <action selector="onClickRadio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n25-Kq-T8n"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppd-HM-ka1" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
-                                <rect key="frame" x="24" y="168" width="59" height="30"/>
-                                <state key="normal" title="radio - 3"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="third"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="onClickRadio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOh-9n-esg"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtl-rs-0a2">
                                 <rect key="frame" x="19" y="390" width="217" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZE-UO-mHs" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZE-UO-mHs">
                                 <rect key="frame" x="23" y="246" width="59" height="30"/>
                                 <state key="normal" title="check -1"/>
                                 <userDefinedRuntimeAttributes>
@@ -63,7 +53,7 @@
                                     <action selector="onClickCheck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZb-t2-PjM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzZ-lH-i9f" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzZ-lH-i9f">
                                 <rect key="frame" x="22" y="289" width="61" height="30"/>
                                 <state key="normal" title="check -2"/>
                                 <userDefinedRuntimeAttributes>
@@ -73,7 +63,7 @@
                                     <action selector="onClickCheck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fym-kV-5bs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZu-ch-2qf" customClass="TWCheckButton" customModule="TWCheckButtonDemo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZu-ch-2qf">
                                 <rect key="frame" x="22" y="336" width="62" height="30"/>
                                 <state key="normal" title="check -3"/>
                                 <userDefinedRuntimeAttributes>
@@ -86,9 +76,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibU-hr-UJz">
                                 <rect key="frame" x="25" y="215" width="203" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppd-HM-ka1">
+                                <rect key="frame" x="24" y="168" width="59" height="30"/>
+                                <state key="normal" title="radio - 3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="third"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickRadio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOh-9n-esg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
