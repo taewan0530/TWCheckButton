@@ -14,8 +14,8 @@ private struct AssociatedKeys {
     static var group = "tw_group"
 }
 
-extension UIButton {
-    @IBInspectable var name: String {
+public extension UIButton {
+    @IBInspectable public var name: String {
         get {
             guard let name = objc_getAssociatedObject(self, &AssociatedKeys.name) as? String else { return "" }
             return name
@@ -25,17 +25,7 @@ extension UIButton {
         }
     }
     
-    var _tw_group: [UIButton]? {
-        get {
-            guard let group = objc_getAssociatedObject(self, &AssociatedKeys.group) as? [UIButton] else { return nil }
-            return group
-        }
-        set(value) {
-            objc_setAssociatedObject(self, &AssociatedKeys.group, value, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-    }
-    
-    public var checked: Bool {
+    @IBInspectable public var checked: Bool {
         get {
             return self.selected
         }
@@ -52,9 +42,20 @@ extension UIButton {
             self.selected = newValue
         }
     }
+    
+    var _tw_group: [UIButton]? {
+        get {
+            guard let group = objc_getAssociatedObject(self, &AssociatedKeys.group) as? [UIButton] else { return nil }
+            return group
+        }
+        set(value) {
+            objc_setAssociatedObject(self, &AssociatedKeys.group, value, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
 }
 
-extension Array where Element:UIButton  {
+public extension Array where Element:UIButton  {
     
     public var tw_group_isRadio: Bool {
         get {
