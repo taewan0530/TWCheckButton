@@ -39,6 +39,7 @@ public extension UIButton {
                     button.selected = false
                 }
             }
+            
             self.selected = newValue
         }
     }
